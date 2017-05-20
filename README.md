@@ -24,5 +24,7 @@
 
 Посмотрим на потребление памяти в системном мониторе. В моем случае оно практически сразу останавливается на 29.1 МБ.  
 
-Теперь запустим rviz c буфером в 10 минут:  
-`rosrun rviz rviz tf-buffer 600 -d 'rospack find turtle_tf'/rviz/turtle_rviz.rviz`  
+Теперь запустим rviz c буфером в 5 минут:  
+`rosrun rviz rviz tf-buffer 300 -d 'rospack find turtle_tf'/rviz/turtle_rviz.rviz`  
+
+Размер буфера был увеличен и потребление памяти оказывается 32.1 МБ.
