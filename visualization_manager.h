@@ -107,6 +107,7 @@ public:
    * @param wm a pointer to the window manager (which is really just a
    *        VisualizationFrame, the top-level container widget of rviz).
    * @param tf a pointer to tf::TransformListener which will be internally used by FrameManager.
+   * @param tf_buffer_size size of tf buffer in seconds
    */
   VisualizationManager( RenderPanel* render_panel, WindowManagerInterface* wm = 0, int tf_buffer_size = 60, boost::shared_ptr<tf::TransformListener> tf = boost::shared_ptr<tf::TransformListener>() );
 

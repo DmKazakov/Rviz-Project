@@ -73,6 +73,7 @@ public:
 
   /** @brief Constructor
    * @param tf a pointer to tf::TransformListener (should not be used anywhere else because of thread safety)
+   * @param tf_buffer_size size of tf buffer is seconds
    */
   FrameManager(boost::shared_ptr<tf::TransformListener> tf = boost::shared_ptr<tf::TransformListener>(), int tf_buffer_size = 60);
 
