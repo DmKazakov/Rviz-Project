@@ -144,7 +144,7 @@ bool VisualizerApp::init( int argc, char** argv )
       ("disable-anti-aliasing", "Prevent rviz from trying to use anti-aliasing when rendering.")
       ("no-stereo", "Disable the use of stereo rendering.")
       ("verbose,v", "Enable debug visualizations")
-      ("tf-buffer", po::value<int>(), "Sets size of tf buffer.")
+      ("tf-buffer,t", po::value<int>(), "Sets size of tf buffer.")
       ("log-level-debug", "Sets the ROS logger level to debug.");
     po::variables_map vm;
     std::string display_config, fixed_frame, splash_path, help_path;
