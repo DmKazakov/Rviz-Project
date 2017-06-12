@@ -21,12 +21,12 @@
 `roslaunch turtle_tf turtle_tf_demo.launch`  
 
 Во втором запускаем rviz с буфером в 1 минуту:  
-`rosrun rviz rviz -t 60 -d 'rospack find turtle_tf'/rviz/turtle_rviz.rviz`  
+rosrun rviz rviz -t 60 -d \`rospack find turtle_tf\`/rviz/turtle_rviz.rviz  
 
 Посмотрим на потребление памяти в системном мониторе. Стабилизация происходит на 31.6 МБ. 
 
 Теперь запустим rviz c буфером в 10 минут:  
-`rosrun rviz rviz -t 600 -d 'rospack find turtle_tf'/rviz/turtle_rviz.rviz`  
+rosrun rviz rviz -t 600 -d \`rospack find turtle_tf\`/rviz/turtle_rviz.rviz  
 
 Размер буфера был увеличен и потребление памяти оказывается 41.5 МБ.
 
